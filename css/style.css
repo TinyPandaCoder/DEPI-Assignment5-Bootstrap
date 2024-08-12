@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Quicksand", sans-serif;
+}
+main{
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+:root {
+  --dark-blue: #192b5b;
+  --green: #43bc31;
+  --bg-color: #fff;
+  --bg-icon: gainsboro;
+}
+section{
+    height: fit-content;
+}
+body {
+  background-color: var(--bg-color);
+  font-weight: 500;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.border {
+  border: 2px solid red;
+}
+.active {
+  color: var(--bg-color);
+  background-color: var(--green);
+}
+/* Header start */
+header {
+  padding: 1rem 15%;
+  justify-content: space-between;
+  box-shadow: 0 0 18px 15px rgb(0 0 0 / 10%);
+  width: 100%;
+  background-color: var(--bg-color);
+}
+.logo {
+  color: var(--dark-blue);
+  font-weight: 600;
+  font-size: 2rem;
+}
+.logo .logo-icon {
+  color: var(--green);
+}
+nav {
+  flex-grow: 1;
+}
+ul {
+  justify-content: center;
+}
+
+ul li {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 0 0.5rem;
+}
+ul li a {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.active a {
+  color: var(--bg-color);
+}
+.active:hover {
+  background-color: orangered;
+  transition: 0.3s ease;
+}
+ul li:hover {
+  transition: 0.3s ease;
+  background-color: var(--green);
+  color: var(--bg-color);
+}
+ul li:hover a {
+  color: var(--bg-color);
+  transition: 0.3s ease;
+}
+.profile {
+  justify-content: flex-end;
+}
+.profile div {
+  padding: 0.5rem;
+  background-color: var(--bg-icon);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.profile button {
+  font-size: large;
+  padding: 0.5rem;
+  background-color: var(--bg-icon);
+  border-radius: 50%;
+  margin-right: 1rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.profile button:hover {
+  color: #fff;
+  background-color: var(--green);
+  transition: 0.3s ease;
+  rotate: 360deg;
+}
+/* Header End */
+
+/* Hero Section */
+.hero {
+  justify-content: center;
+  padding: 7rem 7rem;
+  column-gap: 1rem;
+  background-color: #f8f8f853;
+}
+
+.hero .right {
+  width: 40%;
+}
+.hero .right,
+.hero .left {
+  align-items: center;
+}
+
+.hero .left {
+  justify-content: flex-end;
+  color: var(--dark-blue);
+  align-self: center;
+  width: 50%;
+}
+
+
+.hero .left .special {
+  text-transform: capitalize;
+  color: var(--green);
+  font-size: 2rem;
+  font-weight: 600;
+}
+.hero .left div.description h1 {
+  font-weight: 900;
+  font-size: 4.5rem;
+}
+.hero .left div.description p {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.659);
+  font-size: 1.7rem;
+  margin: 1rem 0;
+}
+.hero .left button {
+  padding: 0.5rem 1rem;
+  background-color: var(--dark-blue);
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: larger;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.hero .left button:hover {
+  background-color: var(--green);
+  transition: 0.3s ease;
+}
+/* Hero Section */
+
+/* Dishes Section */
+
+
+section.dishes {
+  flex-direction: column;
+  width: 100%;
+  background-color: #f9f5f5;
+  display: flex;
+  padding: 1% 10%;
+  text-align: center;
+  justify-items: center;
+}
+section.dishes .dishes-title {
+  color: var(--dark-blue);
+  font-size: 2.5rem;
+  font-weight: 600;
+  border-radius: 0.2rem;
+  padding: 1rem 0;
+  position: relative;
+  border-bottom: 3px solid var(--green);
+  width: fit-content;
+  margin: auto;
+}
+section.dishes .dishes-title::after {
+  content: "";
+  border: 2px solid var(--green);
+  position: absolute;
+  bottom: 3px;
+  left: 25%;
+  right: 25%;
+  border-radius: 0.2rem;
+}
+section.dishes .dishes-title::before {
+  content: "";
+  border: 2px solid var(--green);
+  position: absolute;
+  bottom: -9px;
+  left: 25%;
+  right: 25%;
+  border-radius: 0.2rem;
+}
+section.dishes .popular-dishes {
+  color: rgba(0, 0, 0, 0.862);
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+.cards {
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.card-container {
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.7rem;
+}
+.card-container:hover{
+  outline: 2px solid rgb(50, 105, 50);
+}
+.card {
+  background-color: #fff;
+  padding: 4.4rem 0.6rem;
+  box-shadow: 0 0 18px 3px rgba(0, 0, 0, 0.094);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  justify-content: center;
+  text-align: center;
+}
+.link, .heart {
+  padding: 1rem;
+  position: absolute;
+  background-color: gainsboro;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 5%;
+  transition: 0.3s ease ;
+  color: #192b5b;
+  font-weight: 700;
+}
+.link{
+  left:-100px;
+}
+.heart{
+  right:-100px;
+}
+.card-container:hover .link{
+  left: 15%;
+}
+.card-container:hover .heart{
+  right: 15%;
+}
+
+.link:hover,.heart:hover{
+  background-color: #43bc31;
+  color: #fff;
+}
+
+
+.card h4 {
+  font-size: 1.8rem;
+  color: var(--dark-blue);
+}
+
+.card .stars {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+  color: var(--green);
+  font-size: 1.5rem;
+}
+.card img {
+  width: 75%;
+  margin: auto;
+}
+.card .stars div {
+  padding: 0.1rem;
+}
+.card div.price {
+  font-size: 2rem;
+  color: #43bc31;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+.card div.price button {
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: var(--dark-blue);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: none;
+}
+.card div.price button:hover {
+  transition: 0.3s ease;
+  background-color: #43bc31;
+}
+/* Dishes Section */
+
+/* About Us */ 
+.container{
+  width: 80%;
+  margin: auto;
+}
+section.about-us{
+  padding: 3rem 0;
+}
+section.about-us .about-us-title {
+  color: var(--dark-blue);
+  font-size: 2.5rem;
+  font-weight: 600;
+  border-radius: 0.2rem;
+  padding: 1rem 0;
+  position: relative;
+  border-bottom: 3px solid var(--green);
+  width: fit-content;
+  margin: auto;
+}
+section.about-us .about-us-title::after {
+  content: "";
+  border: 2px solid var(--green);
+  position: absolute;
+  bottom: 3px;
+  left: 25%;
+  right: 25%;
+  border-radius: 0.2rem;
+}
+section.about-us .about-us-title::before {
+  content: "";
+  border: 2px solid var(--green);
+  position: absolute;
+  bottom: -9px;
+  left: 25%;
+  right: 25%;
+  border-radius: 0.2rem;
+}
+section.about-us .about-us-dishes {
+  color: rgba(0, 0, 0, 0.862);
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  text-align: center;
+}
+.content{
+  gap: 2rem;
+}
+.content .left{
+  width: 50%;
+}
+
+
+
+.content .right{
+  width: 50%;
+}
+
+.content .right h3{
+  font-size: 2rem;
+  color: var(--dark-blue);
+  margin-bottom: 0.5rem;
+  
+}
+.content .right p{
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.826);
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+
+}
+.content .right .qualities{
+  display: flex;
+  column-gap: 1rem;
+  margin-bottom: 1rem;
+}
+.content .right .qualities .quality{
+  padding: 1rem;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  color: #192b5b;
+  font-weight: 700;
+  outline: 1px solid black;
+  display: flex;
+  column-gap: 0.4rem;
+}
+.content .right .qualities .quality div{
+  color: #43bc31;
+}
+
+.about-us .right button {
+  padding: 0.5rem 1rem;
+  background-color: var(--dark-blue);
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: larger;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.about-us .right button:hover {
+  background-color: var(--green);
+  transition: 0.3s ease;
+}
+/* About Us */ 
+
+/* Menu */
+section.menu {
+  flex-direction: column;
+  width: 100%;
+  background-color: #f9f5f5;
+  display: flex;
+  padding: 1% 10%;
+  text-align: center;
+  justify-items: center;
+}
+section.menu .menu-title {
+  color: var(--dark-blue);
+  font-size: 2.5rem;
+  font-weight: 600;
+  border-radius: 0.2rem;
+  padding: 1rem 0;
+  position: relative;
+  border-bottom: 3px solid var(--green);
+  width: fit-content;
+  margin: auto;
+}
+section.menu .menu-title::after {
+  content: "";
+  border: 2px solid var(--green);
+  position: absolute;
+  bottom: 3px;
+  left: 25%;
+  right: 25%;
+  border-radius: 0.2rem;
+}
+section.menu .menu-title::before {
+  content: "";
+  border: 2px solid var(--green);
+  position: absolute;
+  bottom: -9px;
+  left: 25%;
+  right: 25%;
+  border-radius: 0.2rem;
+}
+section.menu .menu-dishes {
+  color: rgba(0, 0, 0, 0.862);
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+section.menu .card{
+  padding: 1rem 1rem;
+  justify-content: flex-start;
+  display: flex;
+
+}
+/* Menu */
