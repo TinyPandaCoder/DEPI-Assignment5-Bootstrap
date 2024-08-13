@@ -67,9 +67,8 @@ nav div.icons button {
   background-color: gainsboro;
 }
 nav div.icons button:hover {
-  background-color: #46bb2e;
+  background-color: #46bb2e !important;
   color: #fff;
-  transform: rotate(90deg);
   transform: scaleX(-1);
   transition: 0.3s ease;
 }
@@ -160,7 +159,6 @@ nav div.icons button:hover {
 #dishes .card .icon-link:hover, #dishes .card .icon-shopping-cart:hover{
   background-color: #46bb2e!important;
   color: #fff;
-    transform: rotate(90deg);
   transform: scaleX(-1);
   transition: 0.3s ease;
 }
@@ -178,7 +176,10 @@ nav div.icons button:hover {
   right: 7%;
   transition: 0.3s ease;
 }
-
+.img-container{
+  width: 200px;
+  height: 200px;
+}
 /* Dishes */
 
 @media (max-width: 768px) {
