@@ -10,6 +10,12 @@
   --green: #46bb2e;
   --blue: #192a56;
 }
+textarea {
+  resize: none;
+}
+.white{
+  color: #fff;
+}
 .dark-blue {
   color: #192a56 !important;
 }
@@ -26,6 +32,9 @@ img {
 }
 button {
   all: unset;
+}
+a{
+  text-decoration: none;
 }
 /* Navigation Start */
 header {
@@ -233,7 +242,7 @@ div.service {
   position: relative;
   padding-bottom: 12px;
 }
-#menu-heading::after {
+#menu h2.menu-heading::after {
   content: "";
   position: absolute;
   border-bottom: 4px solid var(--green);
@@ -269,6 +278,49 @@ div.service {
 }
 /* Menu */
 
+/* Form */
+#form h2.form-heading {
+  border-bottom: 3px solid var(--green);
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  padding-bottom: 12px;
+}
+#form .form-heading::after {
+  content: "";
+  position: absolute;
+  border-bottom: 4px solid var(--green);
+  bottom: 3px;
+  left: 15%;
+  right: 15%;
+}
+#form h2.form-heading::before {
+  content: "";
+  position: absolute;
+  border-bottom: 4px solid var(--green);
+  bottom: -9px;
+  left: 15%;
+  right: 15%;
+}
+
+#form h2.form-sub-heading {
+  width: fit-content;
+}
+
+#form form {
+  background-color: rgba(248, 242, 242, 0.796);
+}
+/* Form */
+
+
+
+
+/* Footer */
+footer{
+  background-color: #46bb2e;
+  padding: 1rem;
+}
+/* Footer */
 @media (max-width: 768px) {
   #hero div.container {
     flex-direction: column !important;

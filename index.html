@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <header class="container-fluid">
+    <header id="header" class="header" class="container-fluid">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <!-- Logo on the Left -->
         <div class="container d-flex justify-content-between">
@@ -700,9 +700,128 @@
       </div>
     </section>
 
+    <!-- Form order -->
 
-    
+    <section class="form p-5" id="form">
+      <h2 class="form-heading mb-4 fw-semibold dark-blue fw-bolder fs-1">
+        Order Now
+      </h2>
+      <h2 class="form-sub-heading mx-auto mb-5 fw-bold text-uppercase">
+        Free And Fast
+      </h2>
+      <div class="form w-75 m-auto">
+        <form action="" class="p-3 rounded-3">
+          <div class="row">
+            <div class="col-lg-6">
+              <label for="name" class="form-label">Your Name</label>
+              <input
+                type="email"
+                class="form-control mb-3"
+                id="name"
+                aria-describedby="emailHelp"
+                placeholder="Enter Your Name"
+              />
+            </div>
+            <div class="col-lg-6">
+              <label for="phone-number" class="form-label">Your Number</label>
+              <input
+                type="email"
+                class="form-control mb-3"
+                id="phone-number"
+                aria-describedby="emailHelp"
+                placeholder="Enter Your number +201XXXXXXXXX"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <label for="order" class="form-label">Your Order</label>
+              <input
+                type="email"
+                class="form-control mb-3"
+                id="order"
+                aria-describedby="emailHelp"
+                placeholder="Enter Your Order"
+              />
+            </div>
+            <div class="col-lg-6">
+              <label for="food" class="form-label">Additional Food</label>
+              <input
+                type="email"
+                class="form-control mb-3"
+                id="food"
+                aria-describedby="emailHelp"
+                placeholder="Additional Food"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <label for="orders-number" class="form-label">How Much</label>
+              <input
+                type="email"
+                class="form-control mb-3"
+                id="orders-number"
+                aria-describedby="emailHelp"
+                placeholder="How Much Orders"
+              />
+            </div>
+            <div class="col-lg-6">
+              <label for="date" class="form-label">Date And Time</label>
+              <input
+                type="date"
+                class="form-control mb-3"
+                id="date"
+                aria-describedby="emailHelp"
+                placeholder="Date And Time"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <label for="address" class="form-label">Your Address</label>
+              <textarea
+                aria-describedby="addressHelp"
+                class="form-control mb-3"
+                name="address"
+                id="address"
+                placeholder="Enter your Address"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="col-lg-6">
+              <label for="note" class="form-label">Note</label>
+              <textarea
+                aria-describedby="noteHelp"
+                class="form-control mb-3"
+                name="Note"
+                id="note"
+                placeholder="Any notes?"
+                rows="10"
+              ></textarea>
+            </div>
+          </div>
+          <button type="submit" class="button-blue py-1">Order Now</button>
+        </form>
+      </div>
+    </section>
 
+    <footer class="footer" id="footer">
+      <div class="container d-flex justify-content-between align-baseline">
+        <div class="icons d-flex gap-3 white">
+          <a class="white" href="#header"><i class="icon-twitter"></i></a>
+          <a class="white" href="#header"><i class="icon-facebook"></i></a>
+          <a class="white" href="#header"><i class="icon-twitter"></i></a>
+          <a class="white" href="#header"><i class="icon-facebook"></i></a>
+          <a class="white" href="#header"><i class="icon-twitter"></i></a>
+        </div>
+        <div class="text">
+          <span class="white">Copyright © 2022 </span>&nbsp;<a href="#hero"
+            >Angora</a
+          >
+        </div>
+      </div>
+    </footer>
     <!-- bootstrap js -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
