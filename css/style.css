@@ -109,16 +109,16 @@ nav div.icons button:hover {
   background-color: rgba(248, 242, 242, 0.796);
 }
 #dishes h2.dishes-heading {
-  border-bottom: 2px solid var(--green);
+  border-bottom: 3px solid var(--green);
   width: fit-content;
   margin: auto;
   position: relative;
-  padding: 6px;
+  padding-bottom: 12px;
 }
 #dishes h2.dishes-heading::after {
   content: "";
   position: absolute;
-  border-bottom: 2px solid var(--green);
+  border-bottom: 4px solid var(--green);
   bottom: 3px;
   left: 15%;
   right: 15%;
@@ -126,8 +126,8 @@ nav div.icons button:hover {
 #dishes h2.dishes-heading::before {
   content: "";
   position: absolute;
-  border-bottom: 2px solid var(--green);
-  bottom: -7px;
+  border-bottom: 4px solid var(--green);
+  bottom: -10px;
   left: 15%;
   right: 15%;
 }
