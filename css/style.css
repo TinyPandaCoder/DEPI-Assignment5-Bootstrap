@@ -170,7 +170,7 @@ nav div.icons button:hover {
   display: block;
 }
 #dishes .card a.left:hover i,
-#dishes .card a.right:hover i{
+#dishes .card a.right:hover i {
   background-color: #46bb2e !important;
   color: #fff !important;
   transform: scaleX(-1) !important;
@@ -316,6 +316,21 @@ div.service {
 }
 /* Form */
 
+/* Contact */
+#contact div.container div.row ul {
+  list-style: none;
+}
+#contact div.container div.row ul a {
+  color: black;
+  font-weight: 500;
+  margin: 0.5rem 0;
+  display: block;
+}
+#contact div.container div.row ul a:hover {
+  color: #46bb2e;
+  text-decoration: underline;
+}
+/* Contact */
 /* Footer */
 footer {
   background-color: #46bb2e;

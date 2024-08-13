@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?rnt7aa');
-  src:  url('fonts/icomoon.eot?rnt7aa#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?rnt7aa') format('truetype'),
-    url('fonts/icomoon.woff?rnt7aa') format('woff'),
-    url('fonts/icomoon.svg?rnt7aa#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?p5wjlo');
+  src:  url('fonts/icomoon.eot?p5wjlo#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?p5wjlo') format('truetype'),
+    url('fonts/icomoon.woff?p5wjlo') format('woff'),
+    url('fonts/icomoon.svg?p5wjlo#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -33,6 +33,9 @@
 }
 .icon-usd:before {
   content: "\e901";
+}
+.icon-instagram:before {
+  content: "\e907";
 }
 .icon-headphones:before {
   content: "\e910";
@@ -69,4 +72,10 @@
 }
 .icon-twitter:before {
   content: "\ea96";
+}
+.icon-dribbble:before {
+  content: "\eaa7";
+}
+.icon-pinterest1:before {
+  content: "\ead1";
 }
