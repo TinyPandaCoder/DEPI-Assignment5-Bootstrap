@@ -10,10 +10,10 @@
   --green: #46bb2e;
   --blue: #192a56;
 }
-.dark-blue{
+.dark-blue {
   color: #192a56 !important;
 }
-.light-green{
+.light-green {
   color: #46bb2e !important;
 }
 section {
@@ -89,14 +89,14 @@ nav div.icons button:hover {
   font-size: 2rem;
   font-weight: 400;
 }
-.button-blue{
+.button-blue {
   background-color: #23345e;
   color: #fff !important;
   padding: 0.5rem;
   font-size: 1.3rem;
   border-radius: 0.7rem;
 }
-.button-blue:hover{
+.button-blue:hover {
   background-color: #46bb2e;
   transition: 0.3s ease;
 }
@@ -132,23 +132,23 @@ nav div.icons button:hover {
   right: 15%;
 }
 
-#dishes h2.dishes-sub-heading{
+#dishes h2.dishes-sub-heading {
   width: fit-content;
 }
 
-
-.card{
+.card {
   display: flex;
   flex-direction: column;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
-  border-radius: 2rem;
+  border-radius: 1rem;
   justify-content: center;
   align-items: center;
   row-gap: 3px;
   overflow: hidden;
 }
-#dishes .card .icon-link,.icon-shopping-cart{
+#dishes .card .icon-link,
+.icon-shopping-cart {
   background-color: gainsboro !important;
   top: 4%;
   font-size: 1.5rem;
@@ -156,32 +156,32 @@ nav div.icons button:hover {
   padding: 0.7rem;
   cursor: pointer;
 }
-#dishes .card .icon-link:hover, #dishes .card .icon-shopping-cart:hover{
-  background-color: #46bb2e!important;
+#dishes .card .icon-link:hover,
+#dishes .card .icon-shopping-cart:hover {
+  background-color: #46bb2e !important;
   color: #fff;
   transform: scaleX(-1);
   transition: 0.3s ease;
 }
-#dishes .card .icon-link{
+#dishes .card .icon-link {
   left: -200px;
 }
-#dishes .card .icon-shopping-cart{
+#dishes .card .icon-shopping-cart {
   right: -200px;
 }
-#dishes div.card:hover .icon-link{
+#dishes div.card:hover .icon-link {
   left: 7%;
   transition: 0.3s ease;
 }
-#dishes div.card:hover .icon-shopping-cart{
+#dishes div.card:hover .icon-shopping-cart {
   right: 7%;
   transition: 0.3s ease;
 }
-.img-container{
+.img-container {
   width: 200px;
   height: 200px;
 }
 /* Dishes */
-
 
 /* About Us */
 #about-us h2.about-us-heading {
@@ -203,15 +203,71 @@ nav div.icons button:hover {
   content: "";
   position: absolute;
   border-bottom: 4px solid var(--green);
-  bottom: -10px;
+  bottom: -9px;
   left: 15%;
   right: 15%;
 }
 
-#about-us h2.about-us-sub-heading{
+#about-us h2.about-us-sub-heading {
   width: fit-content;
 }
+
+div.service {
+  background-color: rgba(248, 242, 242, 0.796);
+}
+#about-us {
+}
+#about-us div.container div.row div.service span.icon {
+  color: #46bb2e !important;
+}
 /* About Us */
+
+/* Menu */
+#menu {
+  background-color: rgba(248, 242, 242, 0.796);
+}
+#menu h2.menu-heading {
+  border-bottom: 3px solid var(--green);
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  padding-bottom: 12px;
+}
+#menu-heading::after {
+  content: "";
+  position: absolute;
+  border-bottom: 4px solid var(--green);
+  bottom: 3px;
+  left: 15%;
+  right: 15%;
+}
+#menu h2.menu-heading::before {
+  content: "";
+  position: absolute;
+  border-bottom: 4px solid var(--green);
+  bottom: -9px;
+  left: 15%;
+  right: 15%;
+}
+
+#menu h2.menu-sub-heading {
+  width: fit-content;
+}
+
+#menu .card .icon-heart {
+  top: 8%;
+  right: 8%;
+  background-color: #fff;
+  padding: 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#menu .card .icon-heart:hover {
+  background-color: var(--green);
+  color: #fff;
+  transition: 0.3s ease;
+}
+/* Menu */
 
 @media (max-width: 768px) {
   #hero div.container {
@@ -226,8 +282,7 @@ nav div.icons button:hover {
 }
 
 @media (max-width: 992px) {
-    .nav-item{
-      margin-top: 0.5rem;
-    }
-
+  .nav-item {
+    margin-top: 0.5rem;
+  }
 }

@@ -1,716 +1,712 @@
 <!DOCTYPE html>
-<html
-    lang="en">
-    <head>
-        <meta
-            charset="UTF-8">
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0">
-        <title>Resto</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resto</title>
 
-        <link
-            rel="shortcut icon"
-            href="imgs/pasta.png"
+    <link rel="shortcut icon" href="imgs/pasta.png" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- icons -->
+    <link rel="stylesheet" href="icons/style.css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!-- Logo on the Left -->
+        <div class="container d-flex justify-content-between">
+          <div class="logo">
+            <a class="navbar-brand d-flex align-items-center" href="#"
+              ><div class="icon-spoon-knife"></div>
+              <span> Resto.</span></a
             >
+          </div>
 
-        <!-- Bootstrap -->
-        <link
-            rel="stylesheet"
-            href="css/bootstrap.min.css">
+          <!-- Burger menu -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <!-- icons -->
-        <link
-            rel="stylesheet"
-            href="icons/style.css">
+          <!-- Nav Links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav mx-auto mb-2 mb-lg-0 justify-content-center d-flex"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dishes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Review</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Order</a>
+              </li>
+            </ul>
+          </div>
 
-        <!-- Custom Css -->
-        <link
-            rel="stylesheet"
-            href="css/style.css">
+          <!-- Nav icons on the right -->
+          <div class="icons justify-content-between">
+            <button
+              type="button"
+              class="btn border-0 rounded-circle fs-4 icon-search"
+            ></button>
+            <button
+              type="button"
+              class="btn border-0 rounded-circle fs-4 icon-heart"
+            ></button>
+            <button
+              type="button"
+              class="btn border-0 rounded-circle fs-4 icon-shopping-cart"
+            ></button>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-    </head>
-    <body>
+    <!-- Hero -->
+    <section
+      id="hero"
+      class="min-vh-100 hero container-fluid d-flex align-items-center justify-content-center py-5"
+    >
+      <div class="container d-flex">
+        <div class="text col-6">
+          <h3 class>Our Special Dish</h3>
+          <h1 class>Spicy Noodles</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla,
+            repudiandae!
+          </p>
+          <button class="button-blue">Order Now</button>
+        </div>
+        <div class="hero-img col-6">
+          <img src="imgs/dish.png" alt="Special Dish" />
+        </div>
+      </div>
+    </section>
 
-        <!-- Navigation Bar -->
-        <header
-            class="container-fluid">
-            <nav
-                class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Dishes -->
 
-                <!-- Logo on the Left -->
-                <div
-                    class="container d-flex justify-content-between ">
-                    <div
-                        class=" logo">
-                        <a
-                            class="navbar-brand d-flex align-items-center"
-                            href="#"><div
-                                class="icon-spoon-knife"></div>
-                            <span>
-                                Resto.</span></a></div>
-
-                    <!-- Burger menu -->
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span
-                            class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <!-- Nav Links -->
-                    <div
-                        class="collapse navbar-collapse "
-                        id="navbarSupportedContent">
-                        <ul
-                            class="navbar-nav mx-auto mb-2 mb-lg-0 justify-content-center d-flex">
-                            <li
-                                class="nav-item">
-                                <a
-                                    class="nav-link active"
-                                    aria-current="page"
-                                    href="#">
-                                    Home</a>
-                            </li>
-                            <li
-                                class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    href="#">Dishes</a>
-                            </li>
-                            <li
-                                class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    href="#">About</a>
-                            </li>
-                            <li
-                                class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    href="#">Review</a>
-                            </li>
-                            <li
-                                class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    href="#">Order</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Nav icons on the right -->
-                    <div
-                        class="icons justify-content-between">
-                        <button
-                            type="button"
-                            class="btn border-0 rounded-circle fs-4 icon-search"></button>
-                        <button
-                            type="button"
-                            class="btn border-0 rounded-circle fs-4 icon-heart"></button>
-                        <button
-                            type="button"
-                            class="btn  border-0 rounded-circle fs-4 icon-shopping-cart"></button>
-
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!-- Hero -->
-        <section
-            id="hero"
-            class="min-vh-100 hero container-fluid  d-flex align-items-center justify-content-center py-5">
+    <section class="dishes p-5" id="dishes">
+      <h2 class="dishes-heading mb-5 fw-semibold">Our Dishes</h2>
+      <h2 class="dishes-sub-heading mx-auto mb-5 fw-bold text-uppercase">
+        Popular Dishes
+      </h2>
+      <div class="container">
+        <div class="row">
+          <div class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
             <div
-                class="container d-flex ">
-                <div
-                    class="text col-6  ">
-                    <h3
-                        class>Our
-                        Special
-                        Dish</h3>
-                    <h1
-                        class>Spicy
-                        Noodles</h1>
-                    <p>Lorem
-                        ipsum,
-                        dolor
-                        sit
-                        amet
-                        consectetur
-                        adipisicing
-                        elit.
-                        Nulla,
-                        repudiandae!</p>
-                    <button
-                        class=" button-blue">Order
-                        Now</button>
-                </div>
-                <div
-                    class="hero-img col-6 ">
-                    <img
-                        src="imgs/dish.png"
-                        alt="Special Dish" />
-                </div>
+              class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="icon-link position-absolute"></div>
+              <div class="img-container">
+                <img class="rounded-2 mb-3" src="imgs/dish.png" alt />
+              </div>
+
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+              </div>
+              <div
+                class="d-flex gap-2 align-items-baseline justify-content-between w"
+              >
+                <h5 class="price light-green">$15.99</h5>
+                <button class="button-blue fs-6">Add To Chart</button>
+              </div>
+              <div class="icon-shopping-cart position-absolute"></div>
             </div>
-        </section>
-
-        <!-- Dishes -->
-
-        <section
-            class="dishes p-5"
-            id="dishes">
-            <h2
-                class="dishes-heading mb-5 fw-semibold">Our
-                Dishes</h2>
-            <h2
-                class="dishes-sub-heading mx-auto mb-5 fw-bold text-uppercase">Popular
-                Dishes</h2>
+          </div>
+          <div class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
             <div
-                class="container">
-                <div
-                    class="row ">
-                    <div
-                        class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
-                        <div
-                            class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6">
-                            <div
-                                class="icon-link position-absolute"></div>
-                            <div
-                                class="img-container">
-                                <img
-                                    class="rounded-2 mb-3"
-                                    src="imgs/dish.png"
-                                    alt></div>
+              class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="icon-link position-absolute"></div>
+              <div class="img-container">
+                <img class="rounded-2 mb-3" src="imgs/menu-5.jpg" alt />
+              </div>
 
-                            <h4
-                                class="dark-blue fw-bold">Tasty
-                                Food</h4>
-                            <div
-                                class="stars d-flex gap-2 light-green mb-3">
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                            </div>
-                            <div
-                                class="d-flex gap-2 align-items-baseline justify-content-between w">
-                                <h5
-                                    class="price light-green">$15.99</h5>
-                                <button
-                                    class="button-blue fs-6">Add
-                                    To
-                                    Chart</button>
-                            </div>
-                            <div
-                                class="icon-shopping-cart position-absolute"></div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+              </div>
+              <div
+                class="d-flex gap-2 align-items-baseline justify-content-between w"
+              >
+                <h5 class="price light-green">$15.99</h5>
+                <button class="button-blue fs-6">Add To Chart</button>
+              </div>
+              <div class="icon-shopping-cart position-absolute"></div>
+            </div>
+          </div>
+          <div class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
+            <div
+              class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="icon-link position-absolute"></div>
+              <div class="img-container">
+                <img class="rounded-2 mb-3" src="imgs/menu-4.jpg" alt />
+              </div>
 
-                        </div>
-                    </div>
-                    <div
-                        class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
-                        <div
-                            class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6">
-                            <div
-                                class="icon-link position-absolute"></div>
-                            <div
-                                class="img-container">
-                                <img
-                                    class="rounded-2 mb-3"
-                                    src="imgs/menu-5.jpg"
-                                    alt></div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+              </div>
+              <div
+                class="d-flex gap-2 align-items-baseline justify-content-between w"
+              >
+                <h5 class="price light-green">$15.99</h5>
+                <button class="button-blue fs-6">Add To Chart</button>
+              </div>
+              <div class="icon-shopping-cart position-absolute"></div>
+            </div>
+          </div>
+          <div class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
+            <div
+              class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="icon-link position-absolute"></div>
+              <div class="img-container">
+                <img class="rounded-2 mb-3" src="imgs/dish-3.png" alt />
+              </div>
 
-                            <h4
-                                class="dark-blue fw-bold">Tasty
-                                Food</h4>
-                            <div
-                                class="stars d-flex gap-2 light-green mb-3">
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                            </div>
-                            <div
-                                class="d-flex gap-2 align-items-baseline justify-content-between w">
-                                <h5
-                                    class="price light-green">$15.99</h5>
-                                <button
-                                    class="button-blue fs-6">Add
-                                    To
-                                    Chart</button>
-                            </div>
-                            <div
-                                class="icon-shopping-cart position-absolute"></div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+              </div>
+              <div
+                class="d-flex gap-2 align-items-baseline justify-content-between w"
+              >
+                <h5 class="price light-green">$15.99</h5>
+                <button class="button-blue fs-6">Add To Chart</button>
+              </div>
+              <div class="icon-shopping-cart position-absolute"></div>
+            </div>
+          </div>
+          <div class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
+            <div
+              class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="icon-link position-absolute"></div>
+              <div class="img-container">
+                <img class="rounded-2 mb-3" src="imgs/menu-1.jpg" alt />
+              </div>
 
-                        </div>
-                    </div>
-                    <div
-                        class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
-                        <div
-                            class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6">
-                            <div
-                                class="icon-link position-absolute"></div>
-                            <div
-                                class="img-container">
-                                <img
-                                    class="rounded-2 mb-3"
-                                    src="imgs/menu-4.jpg"
-                                    alt></div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+              </div>
+              <div
+                class="d-flex gap-2 align-items-baseline justify-content-between w"
+              >
+                <h5 class="price light-green">$15.99</h5>
+                <button class="button-blue fs-6">Add To Chart</button>
+              </div>
+              <div class="icon-shopping-cart position-absolute"></div>
+            </div>
+          </div>
+          <div class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
+            <div
+              class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="icon-link position-absolute"></div>
+              <div class="img-container">
+                <img class="rounded-2 mb-3" src="imgs/menu-3.jpg" alt />
+              </div>
 
-                            <h4
-                                class="dark-blue fw-bold">Tasty
-                                Food</h4>
-                            <div
-                                class="stars d-flex gap-2 light-green mb-3">
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                            </div>
-                            <div
-                                class="d-flex gap-2 align-items-baseline justify-content-between w">
-                                <h5
-                                    class="price light-green">$15.99</h5>
-                                <button
-                                    class="button-blue fs-6">Add
-                                    To
-                                    Chart</button>
-                            </div>
-                            <div
-                                class="icon-shopping-cart position-absolute"></div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+              </div>
+              <div
+                class="d-flex gap-2 align-items-baseline justify-content-between w"
+              >
+                <h5 class="price light-green">$15.99</h5>
+                <button class="button-blue fs-6">Add To Chart</button>
+              </div>
+              <div class="icon-shopping-cart position-absolute"></div>
+            </div>
+          </div>
+          <div class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
+            <div
+              class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="icon-link position-absolute"></div>
+              <div class="img-container">
+                <img class="rounded-2 mb-3" src="imgs/menu-6.jpg" alt />
+              </div>
 
-                        </div>
-                    </div>
-                    <div
-                        class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
-                        <div
-                            class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6">
-                            <div
-                                class="icon-link position-absolute"></div>
-                            <div
-                                class="img-container">
-                                <img
-                                    class="rounded-2 mb-3"
-                                    src="imgs/dish-3.png"
-                                    alt></div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+              </div>
+              <div
+                class="d-flex gap-2 align-items-baseline justify-content-between w"
+              >
+                <h5 class="price light-green">$15.99</h5>
+                <button class="button-blue fs-6">Add To Chart</button>
+              </div>
+              <div class="icon-shopping-cart position-absolute"></div>
+            </div>
+          </div>
+          <div class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
+            <div
+              class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="icon-link position-absolute"></div>
+              <div class="img-container">
+                <img class="rounded-2 mb-3" src="imgs/dish-2.png" alt />
+              </div>
 
-                            <h4
-                                class="dark-blue fw-bold">Tasty
-                                Food</h4>
-                            <div
-                                class="stars d-flex gap-2 light-green mb-3">
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                            </div>
-                            <div
-                                class="d-flex gap-2 align-items-baseline justify-content-between w">
-                                <h5
-                                    class="price light-green">$15.99</h5>
-                                <button
-                                    class="button-blue fs-6">Add
-                                    To
-                                    Chart</button>
-                            </div>
-                            <div
-                                class="icon-shopping-cart position-absolute"></div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+              </div>
+              <div
+                class="d-flex gap-2 align-items-baseline justify-content-between w"
+              >
+                <h5 class="price light-green">$15.99</h5>
+                <button class="button-blue fs-6">Add To Chart</button>
+              </div>
+              <div class="icon-shopping-cart position-absolute"></div>
+            </div>
+          </div>
+          <div class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
+            <div
+              class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="icon-link position-absolute"></div>
+              <div class="img-container">
+                <img class="rounded-2 mb-3" src="imgs/dish-1.png" alt />
+              </div>
 
-                        </div>
-                    </div>
-                    <div
-                        class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
-                        <div
-                            class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6">
-                            <div
-                                class="icon-link position-absolute"></div>
-                            <div
-                                class="img-container">
-                                <img
-                                    class="rounded-2 mb-3"
-                                    src="imgs/menu-1.jpg"
-                                    alt></div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+              </div>
+              <div
+                class="d-flex gap-2 align-items-baseline justify-content-between w"
+              >
+                <h5 class="price light-green">$15.99</h5>
+                <button class="button-blue fs-6">Add To Chart</button>
+              </div>
+              <div class="icon-shopping-cart position-absolute"></div>
+            </div>
+          </div>
+          <div class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
+            <div
+              class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="icon-link position-absolute"></div>
+              <div class="img-container">
+                <img class="rounded-2 mb-3" src="imgs/dish-4.png" alt />
+              </div>
 
-                            <h4
-                                class="dark-blue fw-bold">Tasty
-                                Food</h4>
-                            <div
-                                class="stars d-flex gap-2 light-green mb-3">
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                            </div>
-                            <div
-                                class="d-flex gap-2 align-items-baseline justify-content-between w">
-                                <h5
-                                    class="price light-green">$15.99</h5>
-                                <button
-                                    class="button-blue fs-6">Add
-                                    To
-                                    Chart</button>
-                            </div>
-                            <div
-                                class="icon-shopping-cart position-absolute"></div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+              </div>
+              <div
+                class="d-flex gap-2 align-items-baseline justify-content-between w"
+              >
+                <h5 class="price light-green">$15.99</h5>
+                <button class="button-blue fs-6">Add To Chart</button>
+              </div>
+              <div class="icon-shopping-cart position-absolute"></div>
+            </div>
+          </div>
+          <div class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
+            <div
+              class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="icon-link position-absolute"></div>
+              <div class="img-container">
+                <img class="rounded-2 mb-3" src="imgs/menu-2.jpg" alt />
+              </div>
 
-                        </div>
-                    </div>
-                    <div
-                        class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
-                        <div
-                            class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6">
-                            <div
-                                class="icon-link position-absolute"></div>
-                            <div
-                                class="img-container">
-                                <img
-                                    class="rounded-2 mb-3"
-                                    src="imgs/menu-3.jpg"
-                                    alt></div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+              </div>
+              <div
+                class="d-flex gap-2 align-items-baseline justify-content-between w"
+              >
+                <h5 class="price light-green">$15.99</h5>
+                <button class="button-blue fs-6">Add To Chart</button>
+              </div>
+              <div class="icon-shopping-cart position-absolute"></div>
+            </div>
+          </div>
+          <div class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
+            <div
+              class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="icon-link position-absolute"></div>
+              <div class="img-container">
+                <img class="rounded-2 mb-3" src="imgs/dish-5.png" alt />
+              </div>
 
-                            <h4
-                                class="dark-blue fw-bold">Tasty
-                                Food</h4>
-                            <div
-                                class="stars d-flex gap-2 light-green mb-3">
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                            </div>
-                            <div
-                                class="d-flex gap-2 align-items-baseline justify-content-between w">
-                                <h5
-                                    class="price light-green">$15.99</h5>
-                                <button
-                                    class="button-blue fs-6">Add
-                                    To
-                                    Chart</button>
-                            </div>
-                            <div
-                                class="icon-shopping-cart position-absolute"></div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+              </div>
+              <div
+                class="d-flex gap-2 align-items-baseline justify-content-between w"
+              >
+                <h5 class="price light-green">$15.99</h5>
+                <button class="button-blue fs-6">Add To Chart</button>
+              </div>
+              <div class="icon-shopping-cart position-absolute"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                        </div>
-                    </div>
-                    <div
-                        class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
-                        <div
-                            class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6">
-                            <div
-                                class="icon-link position-absolute"></div>
-                            <div
-                                class="img-container">
-                                <img
-                                    class="rounded-2 mb-3"
-                                    src="imgs/menu-6.jpg"
-                                    alt></div>
+    <!-- About us -->
+    <section class="about-us p-5 min" id="about-us">
+      <h2 class="about-us-heading mb-4 fw-semibold dark-blue fw-bolder fs-1">
+        About Us
+      </h2>
+      <h2 class="about-us-sub-heading mx-auto mb-5 fw-bold text-uppercase">
+        Why Choose Us?
+      </h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-12">
+            <img src="imgs/about-img.png" alt="" />
+          </div>
+          <div class="col-xl-6 col-12">
+            <h2 class="mb-lg-2 fw-semibold dark-blue fw-bolder fs-1">
+              Best Food In The Country
+            </h2>
+            <p class="mb-3 fs-6 lh-lg fw-medium text-capitalize">
+              Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Dolore,
+              Sequi Corrupti Corporis Quaerat Voluptatem Ipsam Neque Labore Modi
+              Autem, Saepe Numquam Quod Reprehenderit Rem? Tempora Aut Soluta
+              Odio Corporis Nihil! Lorem Ipsum Dolor Sit Amet, Consectetur
+              Adipisicing Elit. Aperiam, Nemo. Sit Porro Illo Eos Cumque
+              Deleniti Iste Alias, Eum Natus.
+            </p>
+            <div class="services mb-3 d-flex gap-3 border-black border-2">
+              <div
+                class="service border border-dark rounded-2 d-flex align-items-center p-3"
+              >
+                <span class="icon pe-2 icon-truck"></span
+                ><span>Free Delivery</span>
+              </div>
+              <div
+                class="service border border-dark rounded-2 d-flex align-items-center p-3"
+              >
+                <span class="icon pe-2 icon-dollar"></span
+                ><span>easy payment</span>
+              </div>
+              <div
+                class="border border-dark service rounded-2 d-flex align-items-center p-3"
+              >
+                <span class="icon pe-2 icon-headphones"></span
+                ><span>24/7 Service</span>
+              </div>
+            </div>
+            <button class="button button-blue px-3">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                            <h4
-                                class="dark-blue fw-bold">Tasty
-                                Food</h4>
-                            <div
-                                class="stars d-flex gap-2 light-green mb-3">
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                            </div>
-                            <div
-                                class="d-flex gap-2 align-items-baseline justify-content-between w">
-                                <h5
-                                    class="price light-green">$15.99</h5>
-                                <button
-                                    class="button-blue fs-6">Add
-                                    To
-                                    Chart</button>
-                            </div>
-                            <div
-                                class="icon-shopping-cart position-absolute"></div>
+    <!-- Menu -->
+    <section class="menu p-4" id="menu">
+      <h2 class="menu-heading mb-4 fw-semibold dark-blue fw-bolder fs-1">
+        Our Menu
+      </h2>
+      <h2 class="menu-sub-heading mx-auto mb-5 fw-bold text-uppercase">
+        TODAY'S SPECIALITY
+      </h2>
+      <div class="container">
+        <div class="row">
+          <div class="card-container pt-2 col-xl-3 col-lg-4 col-md-6">
+            <div
+              class="w-100 align-items-start card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="img-container mb-2 w-100">
+                <img class="rounded-2" src="imgs/menu-3.jpg" alt />
+              </div>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-half"></div>
+              </div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <p class="">
+                Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+                Excepturi, Accusantium.
+              </p>
+              <div
+                class="w-100 d-flex gap-2 align-items-baseline justify-content-between"
+              >
+                <button class="button-blue fs-6">Add To Chart</button>
 
-                        </div>
-                    </div>
-                    <div
-                        class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
-                        <div
-                            class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6">
-                            <div
-                                class="icon-link position-absolute"></div>
-                            <div
-                                class="img-container">
-                                <img
-                                    class="rounded-2 mb-3"
-                                    src="imgs/dish-2.png"
-                                    alt></div>
+                <h5 class="fs-4 price light-green">$15.99</h5>
+              </div>
+              <div class="icon-heart position-absolute top"></div>
+            </div>
+          </div>
+          <div class="card-container pt-2 col-xl-3 col-lg-4 col-md-6">
+            <div
+              class="w-100 align-items-start card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="img-container mb-2 w-100">
+                <img class="rounded-2" src="imgs/menu-3.jpg" alt />
+              </div>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-half"></div>
+              </div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <p class="">
+                Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+                Excepturi, Accusantium.
+              </p>
+              <div
+                class="w-100 d-flex gap-2 align-items-baseline justify-content-between"
+              >
+                <button class="button-blue fs-6">Add To Chart</button>
 
-                            <h4
-                                class="dark-blue fw-bold">Tasty
-                                Food</h4>
-                            <div
-                                class="stars d-flex gap-2 light-green mb-3">
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                            </div>
-                            <div
-                                class="d-flex gap-2 align-items-baseline justify-content-between w">
-                                <h5
-                                    class="price light-green">$15.99</h5>
-                                <button
-                                    class="button-blue fs-6">Add
-                                    To
-                                    Chart</button>
-                            </div>
-                            <div
-                                class="icon-shopping-cart position-absolute"></div>
+                <h5 class="fs-4 price light-green">$15.99</h5>
+              </div>
+              <div class="icon-heart position-absolute top"></div>
+            </div>
+          </div>
+          <div class="card-container pt-2 col-xl-3 col-lg-4 col-md-6">
+            <div
+              class="w-100 align-items-start card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="img-container mb-2 w-100">
+                <img class="rounded-2" src="imgs/menu-3.jpg" alt />
+              </div>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-half"></div>
+              </div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <p class="">
+                Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+                Excepturi, Accusantium.
+              </p>
+              <div
+                class="w-100 d-flex gap-2 align-items-baseline justify-content-between"
+              >
+                <button class="button-blue fs-6">Add To Chart</button>
 
-                        </div>
-                    </div>
-                    <div
-                        class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
-                        <div
-                            class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6">
-                            <div
-                                class="icon-link position-absolute"></div>
-                            <div
-                                class="img-container">
-                                <img
-                                    class="rounded-2 mb-3"
-                                    src="imgs/dish-1.png"
-                                    alt></div>
+                <h5 class="fs-4 price light-green">$15.99</h5>
+              </div>
+              <div class="icon-heart position-absolute top"></div>
+            </div>
+          </div>
+          <div class="card-container pt-2 col-xl-3 col-lg-4 col-md-6">
+            <div
+              class="w-100 align-items-start card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="img-container mb-2 w-100">
+                <img class="rounded-2" src="imgs/menu-3.jpg" alt />
+              </div>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-half"></div>
+              </div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <p class="">
+                Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+                Excepturi, Accusantium.
+              </p>
+              <div
+                class="w-100 d-flex gap-2 align-items-baseline justify-content-between"
+              >
+                <button class="button-blue fs-6">Add To Chart</button>
 
-                            <h4
-                                class="dark-blue fw-bold">Tasty
-                                Food</h4>
-                            <div
-                                class="stars d-flex gap-2 light-green mb-3">
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                            </div>
-                            <div
-                                class="d-flex gap-2 align-items-baseline justify-content-between w">
-                                <h5
-                                    class="price light-green">$15.99</h5>
-                                <button
-                                    class="button-blue fs-6">Add
-                                    To
-                                    Chart</button>
-                            </div>
-                            <div
-                                class="icon-shopping-cart position-absolute"></div>
+                <h5 class="fs-4 price light-green">$15.99</h5>
+              </div>
+              <div class="icon-heart position-absolute top"></div>
+            </div>
+          </div>
+          <div class="card-container pt-2 col-xl-3 col-lg-4 col-md-6">
+            <div
+              class="w-100 align-items-start card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="img-container mb-2 w-100">
+                <img class="rounded-2" src="imgs/menu-3.jpg" alt />
+              </div>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-half"></div>
+              </div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <p class="">
+                Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+                Excepturi, Accusantium.
+              </p>
+              <div
+                class="w-100 d-flex gap-2 align-items-baseline justify-content-between"
+              >
+                <button class="button-blue fs-6">Add To Chart</button>
 
-                        </div>
-                    </div>
-                    <div
-                        class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
-                        <div
-                            class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6">
-                            <div
-                                class="icon-link position-absolute"></div>
-                            <div
-                                class="img-container">
-                                <img
-                                    class="rounded-2 mb-3"
-                                    src="imgs/dish-4.png"
-                                    alt></div>
+                <h5 class="fs-4 price light-green">$15.99</h5>
+              </div>
+              <div class="icon-heart position-absolute top"></div>
+            </div>
+          </div>
+          <div class="card-container pt-2 col-xl-3 col-lg-4 col-md-6">
+            <div
+              class="w-100 align-items-start card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="img-container mb-2 w-100">
+                <img class="rounded-2" src="imgs/menu-3.jpg" alt />
+              </div>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-half"></div>
+              </div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <p class="">
+                Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+                Excepturi, Accusantium.
+              </p>
+              <div
+                class="w-100 d-flex gap-2 align-items-baseline justify-content-between"
+              >
+                <button class="button-blue fs-6">Add To Chart</button>
 
-                            <h4
-                                class="dark-blue fw-bold">Tasty
-                                Food</h4>
-                            <div
-                                class="stars d-flex gap-2 light-green mb-3">
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                            </div>
-                            <div
-                                class="d-flex gap-2 align-items-baseline justify-content-between w">
-                                <h5
-                                    class="price light-green">$15.99</h5>
-                                <button
-                                    class="button-blue fs-6">Add
-                                    To
-                                    Chart</button>
-                            </div>
-                            <div
-                                class="icon-shopping-cart position-absolute"></div>
+                <h5 class="fs-4 price light-green">$15.99</h5>
+              </div>
+              <div class="icon-heart position-absolute top"></div>
+            </div>
+          </div>
+          <div class="card-container pt-2 col-xl-3 col-lg-4 col-md-6">
+            <div
+              class="w-100 align-items-start card position-relative col-xl-3 col-lg-4 col-md-6"
+            >
+              <div class="img-container mb-2 w-100">
+                <img class="rounded-2" src="imgs/menu-3.jpg" alt />
+              </div>
+              <div class="stars d-flex gap-2 light-green mb-3">
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-full"></div>
+                <div class="icon-star-half"></div>
+              </div>
+              <h4 class="dark-blue fw-bold">Tasty Food</h4>
+              <p class="">
+                Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+                Excepturi, Accusantium.
+              </p>
+              <div
+                class="w-100 d-flex gap-2 align-items-baseline justify-content-between"
+              >
+                <button class="button-blue fs-6">Add To Chart</button>
 
-                        </div>
-                    </div>
-                    <div
-                        class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
-                        <div
-                            class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6">
-                            <div
-                                class="icon-link position-absolute"></div>
-                            <div
-                                class="img-container">
-                                <img
-                                    class="rounded-2 mb-3"
-                                    src="imgs/menu-2.jpg"
-                                    alt></div>
+                <h5 class="fs-4 price light-green">$15.99</h5>
+              </div>
+              <div class="icon-heart position-absolute top"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                            <h4
-                                class="dark-blue fw-bold">Tasty
-                                Food</h4>
-                            <div
-                                class="stars d-flex gap-2 light-green mb-3">
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                            </div>
-                            <div
-                                class="d-flex gap-2 align-items-baseline justify-content-between w">
-                                <h5
-                                    class="price light-green">$15.99</h5>
-                                <button
-                                    class="button-blue fs-6">Add
-                                    To
-                                    Chart</button>
-                            </div>
-                            <div
-                                class="icon-shopping-cart position-absolute"></div>
 
-                        </div>
-                    </div>
-                    <div
-                        class="card-container pt-3 col-xl-3 col-lg-4 col-md-6">
-                        <div
-                            class="w-100 card position-relative col-xl-3 col-lg-4 col-md-6">
-                            <div
-                                class="icon-link position-absolute"></div>
-                            <div
-                                class="img-container">
-                                <img
-                                    class="rounded-2 mb-3"
-                                    src="imgs/dish-5.png"
-                                    alt></div>
+    
 
-                            <h4
-                                class="dark-blue fw-bold">Tasty
-                                Food</h4>
-                            <div
-                                class="stars d-flex gap-2 light-green mb-3">
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                                <div
-                                    class="icon-star-full"></div>
-                            </div>
-                            <div
-                                class="d-flex gap-2 align-items-baseline justify-content-between w">
-                                <h5
-                                    class="price light-green">$15.99</h5>
-                                <button
-                                    class="button-blue fs-6">Add
-                                    To
-                                    Chart</button>
-                            </div>
-                            <div
-                                class="icon-shopping-cart position-absolute"></div>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 
-                        </div>
-                    </div>
-
-                </div>
-        </section>
-
-        <!-- About us -->
-         <section class="about-us p-5" id="about-us">
-            <h2
-                class="about-us-heading mb-4 fw-semibold dark-blue fw-bolder fs-1">About
-                Us</h2>
-            <h2
-                class="about-us-sub-heading mx-auto mb-5 fw-bold text-uppercase">Why Choose Us?
-                </h2>
-         </section>
-
-            <!-- bootstrap js -->
-            <script
-                src="js/bootstrap.bundle.min.js"></script>
-
-            <!-- Custom js -->
-            <script
-                src="js/main.js"></script>
-        </body>
-    </html>
+    <!-- Custom js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
