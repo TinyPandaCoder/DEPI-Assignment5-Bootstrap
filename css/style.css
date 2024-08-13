@@ -13,7 +13,7 @@
 textarea {
   resize: none;
 }
-.white{
+.white {
   color: #fff;
 }
 .dark-blue {
@@ -33,7 +33,7 @@ img {
 button {
   all: unset;
 }
-a{
+a {
   text-decoration: none;
 }
 /* Navigation Start */
@@ -156,33 +156,37 @@ nav div.icons button:hover {
   row-gap: 3px;
   overflow: hidden;
 }
-#dishes .card .icon-link,
-.icon-shopping-cart {
-  background-color: gainsboro !important;
+#dishes .card a {
+  background-color: transparent !important;
+  display: block;
   top: 4%;
-  font-size: 1.5rem;
-  border-radius: 50%;
-  padding: 0.7rem;
-  cursor: pointer;
 }
-#dishes .card .icon-link:hover,
-#dishes .card .icon-shopping-cart:hover {
+#dishes .card a div i {
+  border-radius: 50%;
+  background-color: gainsboro !important;
+  font-size: 1.5rem;
+  padding: 0.7rem;
+  color: black !important;
+  display: block;
+}
+#dishes .card a.left:hover i,
+#dishes .card a.right:hover i{
   background-color: #46bb2e !important;
-  color: #fff;
-  transform: scaleX(-1);
+  color: #fff !important;
+  transform: scaleX(-1) !important;
   transition: 0.3s ease;
 }
-#dishes .card .icon-link {
+#dishes .card a.left {
   left: -200px;
 }
-#dishes .card .icon-shopping-cart {
+#dishes .card a.right {
   right: -200px;
 }
-#dishes div.card:hover .icon-link {
+#dishes div.card:hover a.left {
   left: 7%;
   transition: 0.3s ease;
 }
-#dishes div.card:hover .icon-shopping-cart {
+#dishes div.card:hover a.right {
   right: 7%;
   transition: 0.3s ease;
 }
@@ -312,11 +316,8 @@ div.service {
 }
 /* Form */
 
-
-
-
 /* Footer */
-footer{
+footer {
   background-color: #46bb2e;
   padding: 1rem;
 }
